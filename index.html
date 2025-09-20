@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansurbek Rajabov - IT Portfolio</title>
+    <!-- CSS faylni ulash -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="profile-img">
+                <img src="Mansurbek.jpg" alt="Mansurbek Rajabov" onerror="this.style.display='none'">
+            </div>
+            <h1>Mansurbek Rajabov</h1>
+            <p class="subtitle">Junior Full-Stack Developer</p>
+            <p class="location">📍 Tuproqqal'a tumani, Xorazm viloyati, O'zbekiston</p>
+            <p>Al Xorazmiy vorislarida IT bo'yicha tahsil olayotgan talaba</p>
+        </div>
+
+        <!-- Ta'lim ma'lumotlari -->
+        <div class="section">
+            <div class="education-info">
+                <h3>📚 Ta'lim</h3>
+                <p><strong>Al Xorazmiy vorisları IT markazi</strong></p>
+                <p>IT mutaxassisligi (2024 - hozir)</p>
+                <p>1 yillik tajriba</p>
+            </div>
+        </div>
+
+        <!-- Texnik ko'nikmalar -->
+        <div class="section">
+            <h2>💻 Texnik Ko'nikmalar</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3 - Web sahifalar yaratish va dizayn qilish</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <p>Python, Flask - Server tarafini dasturlash</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Ma'lumotlar bazasi</h3>
+                    <p>SQL - Ma'lumotlarni saqlash va boshqarish</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Version Control</h3>
+                    <p>Git, GitHub - Kod versiyalarini boshqarish</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loyihalar -->
+        <div class="section">
+            <h2>🚀 Loyihalar</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Web Portfolio Sayti</h3>
+                    <p>Shaxsiy portfolio veb-sayti yaratish. Zamonaviy dizayn va responsive layout bilan.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Flask Web Application</h3>
+                    <p>Python Flask yordamida yaratilgan web aplikatsiya. Ma'lumotlar bazasi bilan ishlash.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Ma'lumotlar Bazasi Loyihasi</h3>
+                    <p>SQL yordamida murakkab ma'lumotlar bazasini loyihalash va boshqarish.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Database Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Yutuqlar -->
+        <div class="section">
+            <h2>🏆 Yutuqlar va Tajriba</h2>
+            <div class="achievements">
+                <h3>Al Xorazmiy vorislarida 1 yillik tajriba</h3>
+                <p>IT sohasida chuqur nazariy va amaliy bilimlar olish</p>
+            </div>
+            
+            <div class="achievements">
+                <h3>Full-Stack Development</h3>
+                <p>Frontend va Backend texnologiyalarini o'zlashtirish</p>
+            </div>
+        </div>
+
+        <!-- Aloqa ma'lumotlari -->
+        <div class="section">
+            <h2>📞 Aloqa</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>GitHub</h3>
+                    <p>Kodlarimni ko'rish uchun</p>
+                    <a href="#" class="btn">GitHub sahifam</a>
+                </div>
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>Ish takliflari uchun</p>
+                    <a href="mailto:mansurbek@example.com" class="btn">Email yuborish</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Maqsadlar -->
+        <div class="section">
+            <h2>🎯 Kelajak Rejalari</h2>
+            <p>Hozirda IT sohasida chuqur bilimlar olish va amaliy tajribani oshirish ustida ishlamoqdaman. JavaScript, React va boshqa zamonaviy texnologiyalarni o'rganishni rejalashtirmoqdaman. Maqsadim - professional Full-Stack Developer bo'lib, O'zbekistonda IT sohasining rivojlanishiga hissa qo'shish.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Mansurbek Rajabov | Al Xorazmiy vorisları IT talabasi</p>
+    </div>
+
+    <script>
+        // Minimal JavaScript - faqat smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple animation on scroll
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const header = document.querySelector('.header');
+            if (scrolled > 100) {
+                header.style.transform = 'translateY(-10px)';
+                header.style.boxShadow = '0 20px 50px rgba(0, 0, 0, 0.15)';
+            } else {
+                header.style.transform = 'translateY(0)';
+                header.style.boxShadow = '0 15px 35px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
